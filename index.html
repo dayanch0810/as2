@@ -1,48 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>allanur_saryyew AS2</title>
-    
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
-    
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/splide.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+
+    <style>
+        .klassy-font {
+            font-family: 'DancingScript', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: medium;
+        }
+    </style>
+
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Ninth navbar example">
         <div class="container-xl">
-          <a class="navbar-brand fw-bold" href="#">SIXTEEN <span class="text-danger">CLOTHING</span> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExample07XL">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#">Our Products</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand fw-bold" href="#">SIXTEEN <span class="text-danger">CLOTHING</span> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">Our Products</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <div class="position-relative">
+        <div id="splide1" class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <a href="img/slide_01.jpg" data-fancybox="gallery" data-caption="slide-02">
+                            <img src="img/slide_01.jpg" alt="" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/slide_02.jpg" data-fancybox="gallery" data-caption="slide-01">
+                            <img src="img/slide_02.jpg" alt="" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/slide_03.jpg" data-fancybox="gallery" data-caption="slide-03">
+                            <img src="img/slide_03.jpg" alt="" class="img-fluid">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <div class="fw-bold text-danger">BEST OFFER</div>
+        <div class="display-4 text-light fw-semibold">NEW ARRIVALS ON SALE</div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide1', {
+                type: 'loop',
+                perPage: 1,
+                perMove: 1,
+                autoplay: true,
+                interval: 5000,
+                arrows: false,
+            }).mount();
+        });
+    </script>
+    
 
 </body>
+
 </html>
