@@ -55,7 +55,7 @@
     </nav>
 
     <div class="position-relative text-center">
-        <div id="splide1" class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div id="splide-bg" class="splide" role="group" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
@@ -82,11 +82,8 @@
         </div>
 
         <script>
-            Fancybox.bind("[data-fancybox]", {
-                // Your custom options
-            });
             document.addEventListener('DOMContentLoaded', function () {
-                new Splide('#splide1', {
+                new Splide('#splide-bg', {
                     type: 'loop',
                     perPage: 1,
                     perMove: 1,
@@ -99,12 +96,199 @@
 
     </div>
 
+    <div class="container py-5">
+        <div class="row">
+            <div class="col text-start">
+                <div class="h2">Latest Products</div>
+            </div>
+            <div class="col text-end">
+                <div><a href="#" class="text-decoration-none text-danger fw-semibold">VIEW ALL PRODUCTS></a></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="splide-product" class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="border">
+                            <div><img src="img/product_01.jpg" alt="" class="img-fluid"></div>
+                            <div class="p-3">
+                                <div class="row g-2 g-md-4">
+                                    <div class="col-8 text-primary-emphasis h5">
+                                        Title goes here
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        $25.75
+                                    </div>
+                                </div>
+                                <div class="pb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, qui.</div>
+                                <div class="row row-cols-1 row-cols-md-2 text-danger g-2">
+                                    <div class="col text-start">
+                                        <div><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+                                    </div>
+                                    <div class="col text-start text-md-end">
+                                        <div>Reviews(24)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="border">
+                            <div><img src="img/product_02.jpg" alt="" class="img-fluid"></div>
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class="col-8 text-primary-emphasis h5">
+                                        Title goes here
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        $30.25
+                                    </div>
+                                </div>
+                                <div class="pb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, corporis.</div>
+                                <div class="row row-cols-1 row-cols-md-2 text-danger g-2">
+                                    <div class="col text-start">
+                                        <div><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+                                    </div>
+                                    <div class="col text-start text-md-end">
+                                        <div>Reviews(21)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="border">
+                            <div><img src="img/product_03.jpg" alt="" class="img-fluid"></div>
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class="col-8 text-primary-emphasis h5">
+                                        Title goes here
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        $20.45
+                                    </div>
+                                </div>
+                                <div class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum?</div>
+                                <div class="row row-cols-1 row-cols-md-2 text-danger g-2">
+                                    <div class="col text-start">
+                                        <div><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+                                    </div>
+                                    <div class="col text-start text-md-end">
+                                        <div>Reviews(36)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="border">
+                            <div><img src="img/product_04.jpg" alt="" class="img-fluid"></div>
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class="col-8 text-primary-emphasis h5">
+                                        Title goes here
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        $15.25
+                                    </div>
+                                </div>
+                                <div class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, laboriosam?</div>
+                                <div class="row row-cols-1 row-cols-md-2 text-danger g-2">
+                                    <div class="col text-start">
+                                        <div><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+                                    </div>
+                                    <div class="col text-start text-md-end">
+                                        <div>Reviews(48)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="border">
+                            <div><img src="img/product_05.jpg" alt="" class="img-fluid"></div>
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class="col-8 text-primary-emphasis h5">
+                                        Title goes here
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        $12.50
+                                    </div>
+                                </div>
+                                <div class="pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, iste.</div>
+                                <div class="row row-cols-1 row-cols-md-2 text-danger g-2">
+                                    <div class="col text-start">
+                                        <div><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+                                    </div>
+                                    <div class="col text-start text-md-end">
+                                        <div>Reviews(16)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="border">
+                            <div><img src="img/product_06.jpg" alt="" class="img-fluid"></div>
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class="col-8 text-primary-emphasis h5">
+                                        Title goes here
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        $22.50
+                                    </div>
+                                </div>
+                                <div class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tenetur?</div>
+                                <div class="row row-cols-1 row-cols-md-2 text-danger g-2">
+                                    <div class="col text-start">
+                                        <div><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+                                    </div>
+                                    <div class="col text-start text-md-end">
+                                        <div>Reviews(32)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            var splide = new Splide('#splide-product', {
+                type: 'loop',
+                padding: '6rem',
+                perPage: 3,
+                perMove: 1,
+                gap: '1.5rem',
+                pagination: 0,
+                breakpoints: {
+                    767: {
+                        perPage: 1,
+                        perMove: 1,
+                    },
+
+                    991: {
+                        perPage: 2,
+                        perMove: 1,
+                    },
+                },
+            });
+
+            splide.mount();
+        </script>
+    </div>
+
     <div class="container py-3">
         <div class="h2">About Sixteen Clothing</div>
 
         <hr>
 
-        <div class="row justify-content-center py-3 g-4">
+        <div class="row justify-content-center py-3 g-5">
             <div class="col-md-6">
                 <div class="h5 text-primary-emphasis">Looking for the best products?</div>
                 <div><span class="text-primary">Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Cumque dolorem eos quasi similique inventore optio quod <span class="text-primary">nostrum possimus</span> enim saepe!</div>
@@ -138,6 +322,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
 
 </body>
 
