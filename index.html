@@ -80,21 +80,49 @@
             <div class="fw-bold text-danger">BEST OFFER</div>
             <div class="display-4 text-light fw-semibold">NEW ARRIVALS ON SALE</div>
         </div>
+
+        <script>
+            Fancybox.bind("[data-fancybox]", {
+                // Your custom options
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                new Splide('#splide1', {
+                    type: 'loop',
+                    perPage: 1,
+                    perMove: 1,
+                    autoplay: true,
+                    interval: 5000,
+                    arrows: false,
+                }).mount();
+            });
+        </script>
+
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#splide1', {
-                type: 'loop',
-                perPage: 1,
-                perMove: 1,
-                autoplay: true,
-                interval: 5000,
-                arrows: false,
-            }).mount();
-        });
-    </script>
-    
+    <div class="container py-3">
+        <div class="h2">About Sixteen Clothing</div>
+
+        <hr>
+
+        <div class="row justify-content-center py-3 g-4">
+            <div class="col-md-6">
+                <div class="h5 text-primary-emphasis">Looking for the best products?</div>
+                <div><span class="text-primary">Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Cumque dolorem eos quasi similique inventore optio quod <span class="text-primary">nostrum possimus</span> enim saepe!</div>
+                <ul class="py-3 lh-lg">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <div class="btn btn-danger">Read More</div>
+            </div>
+            <div class="col-10 col-md-6">
+                <div><img src="img/feature-image.jpg" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
